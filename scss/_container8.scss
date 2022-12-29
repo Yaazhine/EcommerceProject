@@ -1,0 +1,104 @@
+%common {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    height: 200px;
+    width: 300px;
+
+    span {
+        color: rgb(244, 98, 8);
+        font-size: 40px;
+        margin: 10px;
+        padding: 5px;
+    }
+
+
+    .data {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-size: 13px;
+        margin: 10px;
+        color: rgb(118, 114, 114);
+        gap: 10px;
+
+        h1 {
+            margin: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: orange;
+            margin-top: 15px;
+        }
+    }
+}
+
+.container8 {
+    // height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h4 {
+        color: rgb(156, 154, 154);
+        letter-spacing: 1px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 10px;
+    }
+
+    h2 {
+        color: black;
+        font-size: 30px;
+    }
+
+    .detail {
+        height: 80%;
+        // width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 10px;
+
+        .bscons {
+            @extend %common;
+        }
+
+        .market {
+            @extend %common;
+        }
+
+        .userm {
+            @extend %common;
+        }
+
+        .seller {
+            @extend %common;
+        }
+
+        .financial {
+            @extend %common;
+        }
+
+        .management {
+            @extend %common;
+        }
+    }
+
+
+}
+
+@media(max-width:400px) {
+    .container8 {
+        .detail {
+            flex-direction: column;
+            font-size: 10px;
+        }
+    }
+}

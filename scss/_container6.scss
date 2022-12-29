@@ -1,0 +1,257 @@
+.container6 {
+    // height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .box1 {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+
+        h3 {
+            color: rgb(90, 83, 83);
+            letter-spacing: 1px;
+            font-size: 13px;
+        }
+
+        h2 {
+            color: black;
+            font-size: 35px;
+            font-weight: bold;
+        }
+    }
+
+    .box2 {
+        // height: 550px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px;
+
+        .leaders {
+            // height: 500px;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 10px;
+            margin-left: 150px;
+            margin: 10px;
+
+            .img {
+                height: 200px;
+                width: 90%;
+                background-image: url("../image/person2.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+
+            h2 {
+                color: black;
+                font: 15px bold;
+                margin: 5px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            h3 {
+                color: grey;
+                font: 12px bold;
+                margin: 5px;
+            }
+
+            p {
+                color: rgb(100, 98, 98);
+                font: 15px bold;
+                margin: 5px 0px;
+            }
+
+
+            .icon {
+                height: 30px;
+                width: 150px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row;
+
+                .box {
+                    height: 30px;
+                    width: 30px;
+                    background-color: rgb(96, 92, 92);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+
+                    a {
+                        text-decoration: none;
+                        color: rgb(252, 248, 248);
+                    }
+
+                    &:hover {
+                        background-color: black;
+                    }
+                }
+            }
+        }
+
+
+        .leader1 {
+            // height: 500px;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 10px;
+            margin: 10px;
+
+            .img {
+                height: 200px;
+                width: 90%;
+                background-image: url("./image/person_3.jpg.webp");
+                background-position: center;
+                background-size: cover;
+            }
+
+            h2 {
+                color: black;
+                font: 15px bold;
+                margin: 5px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            h3 {
+                color: grey;
+                font: 12px bold;
+                margin: 5px;
+            }
+
+            p {
+                color: rgb(100, 98, 98);
+                font: 15px bold;
+                margin: 5px 0px;
+            }
+
+            .icon {
+                height: 30px;
+                width: 150px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row;
+
+                .box {
+                    height: 30px;
+                    width: 30px;
+                    background-color: rgb(96, 92, 92);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+
+                    a {
+                        text-decoration: none;
+                        color: rgb(247, 242, 242);
+                    }
+
+                    &:hover {
+                        background-color: black;
+                    }
+                }
+            }
+        }
+
+        .leader2 {
+            // height: 500px;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 10px;
+            margin-right: 150px;
+            margin: 10px;
+
+            .img {
+                height: 200px;
+                width: 90%;
+                background-image: url("./image/person_4.jpg.webp");
+                background-position: center;
+                background-size: cover;
+            }
+
+            h2 {
+                color: black;
+                font: 15px bold;
+                margin: 5px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            h3 {
+                color: grey;
+                font: 12px bold;
+                margin: 5px;
+            }
+
+            p {
+                color: rgb(100, 98, 98);
+                font: 15px bold;
+                margin: 5px 0px;
+            }
+
+            .icon {
+                height: 30px;
+                width: 150px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row;
+
+                .box {
+                    height: 30px;
+                    width: 30px;
+                    background-color: rgb(96, 92, 92);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+
+                    a {
+                        text-decoration: none;
+                        color: rgb(246, 241, 241);
+                    }
+
+                    &:hover {
+                        background-color: black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:400px) {
+    .container6 {
+        .box2 {
+            flex-direction: column;
+            font-size: 10px;
+
+            .leaders,
+            .leader1,
+            .leader2 {
+                width: 100%;
+            }
+        }
+    }
+}

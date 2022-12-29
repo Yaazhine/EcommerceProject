@@ -1,0 +1,115 @@
+.container7 {
+    // height: 100vh;
+    width: 100vw;
+    background-image: url("./image/bgimg1.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .data {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 500px;
+        // width: 500px;
+        padding: 10px;
+
+        h3 {
+            color: grey;
+            font-size: 12px;
+            letter-spacing: 2px;
+            margin: 10px 0px;
+        }
+
+        h2 {
+            color: rgb(245, 240, 240);
+            font-size: 45px;
+            margin: 20px 0px;
+        }
+
+        p {
+            color: white;
+            font-size: 17px;
+            margin: 20px 0px;
+        }
+
+        .countdown {
+            // height: 100px;
+            width: 500px;
+            display: flex;
+            flex-direction: row;
+
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0px;
+            gap: 5px;
+
+            .box {
+                height: 80px;
+                width: 70px;
+                border-radius: 5px;
+                background-color: rgb(235, 241, 241);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px;
+                color: rgb(35, 237, 193);
+
+
+                h1 {
+                    font-size: 30px;
+                }
+
+                p {
+                    color: rgb(91, 91, 91);
+                    margin: 5px;
+                }
+            }
+        }
+
+        @media(max-width:400px) {
+            .countdown {
+                // flex-direction: column;
+                width: 80%;
+                flex-wrap: wrap;
+            }
+        }
+
+        .btn {
+            height: 40px;
+            width: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            input {
+                border: 1px solid white;
+                background-color: transparent;
+                color: white;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 10px;
+                padding: 5px;
+
+                &:hover {
+                    background-color: white;
+                    color: black;
+                    border-color: black;
+                }
+
+            }
+        }
+    }
+}
+
+@media(max-width:400px) {
+    .container7 {
+        font-size: 10px;
+
+    }
+}

@@ -1,0 +1,235 @@
+.container10 {
+    // height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    // padding: 0px 10px;
+    // background-color: grey;
+    // position: relative;
+
+    .text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 100%;
+
+        margin: 2px;
+        padding: 5px;
+        flex-direction: column;
+        // position: absolute;
+        top: 10px;
+
+        h5 {
+            font-size: 13px;
+            letter-spacing: 1px;
+            color: rgb(165, 164, 164)
+        }
+
+        h2 {
+            font-size: 40px;
+            color: black;
+            font-weight: bold;
+        }
+    }
+
+    .models {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .picdata {
+            height: 500px;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 3px;
+
+
+            .img {
+                height: 200px;
+                width: 200px;
+                background-image: url("../image/model_1_bg.jpg.webp");
+                background-position: center;
+                background-size: cover;
+                object-fit: cover;
+            }
+
+            p {
+                font-size: 15px;
+                color: black;
+                margin: 5px;
+
+            }
+
+            .lin {
+                width: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+
+
+                p {
+                    font-size: 13px;
+
+                }
+
+                a {
+                    text-decoration: none;
+                    color: orange;
+                    font-size: 13px;
+                }
+
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+            a {
+                text-decoration: none;
+                color: orange;
+            }
+
+
+        }
+
+        .picdata1 {
+            // height: 500px;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 3px;
+
+
+            .img1 {
+                height: 200px;
+                width: 200px;
+                background-image: url("../image/product_1_bg.jpg.webp");
+                background-position: center;
+                background-size: cover;
+                object-fit: cover;
+            }
+
+            p {
+                font-size: 15px;
+                color: black;
+                margin: 5px;
+
+            }
+
+            .lin {
+                width: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+
+
+
+                p {
+                    font-size: 13px;
+
+                }
+
+                a {
+                    text-decoration: none;
+                    color: orange;
+                    font-size: 13px;
+                }
+
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+            a {
+                text-decoration: none;
+                color: orange;
+            }
+
+
+        }
+
+        .picdata2 {
+            height: 500px;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 3px;
+
+
+            .img2 {
+                height: 200px;
+                width: 200px;
+                background-image: url("../image/model_5_bg.jpg.webp");
+                background-position: center;
+                background-size: cover;
+                object-fit: cover;
+            }
+
+            p {
+                font-size: 15px;
+                color: black;
+                margin: 5px;
+
+            }
+
+            .lin {
+                width: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+
+
+                p {
+                    font-size: 13px;
+
+                }
+
+                a {
+                    text-decoration: none;
+                    color: orange;
+                    font-size: 13px;
+                }
+
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+            a {
+                text-decoration: none;
+                color: orange;
+            }
+
+
+        }
+
+    }
+
+}
+
+@media(max-width:400px) {
+    .container10 {
+        .models {
+            display: flex;
+            flex-direction: column;
+            font-size: 10px;
+        }
+    }
+}

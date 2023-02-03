@@ -106,10 +106,12 @@ body {
     // .top-bar
     .top-bar {
         height: 50px;
-        width: 100%;
+        width: 100vw;
         @extend %ac;
         background-color: rgb(247, 247, 247);
-        padding-left: 20px;
+        padding-left: 10px;
+        position: sticky;
+        top: 0;
 
         .left-icon {
             height: 50px;
@@ -172,7 +174,7 @@ body {
 
     @media (max-width:400px) {
         .left-icon {
-            flex-direction: column;
+            flex-direction: row;
         }
 
         .right-icon {
@@ -196,12 +198,12 @@ body {
         flex-direction: row;
         color: black;
         font-size: 1rem;
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 10px;
+        padding-right: 10px;
         font-weight: bold;
         position: sticky;
-        top: 0;
-        position: relative;
+        top: 40px;
+        // position: relative;
 
 
         h1 {
@@ -288,6 +290,7 @@ body {
     background-repeat: no-repeat;
     padding-left: 0%;
     padding-top: 30%;
+    padding-right: 5px;
     flex-direction: column;
 
     .tex {
@@ -356,7 +359,8 @@ body {
         align-items: flex-start;
         position: absolute;
         top: 10px;
-        right: -150px;
+        right: 0px;
+        visibility: hidden;
 
         .del {
             color: red;
@@ -395,7 +399,7 @@ body {
 }
 
 
-@media (max-width:500px) {
+@media (max-width:700px) {
     .bg-img {
         .tex {
             width: 80%;
